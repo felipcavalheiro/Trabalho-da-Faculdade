@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="./cadastro.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <div class="container">
+            <h1><a href="menupr.html">Basquete360</a></h1>
+        <main id="container">
+            <section>
+                <form id="frml">
+                    <label for="nome" class="form-label"><b>Nome Completo:</b></label>
+                    <input type="text" id="nome" name="nome" class="rounded-input" placeholder="Digite seu nome completo"><br><br>
+
+                    <label for="email" class="form-label"><b>E-mail:</b></label>
+                    <input type="email" id="e-mail" name="e-mail" placeholder="Digite seu e-mail" class="rounded-input"><br><br>
+
+                    <label for="senha" class="form-label"><b>Senha:</b></label>
+                    <input type="password" id="senha" name="senha" placeholder="Crie a sua senha" class="rounded-input"><br><br>
+
+                    <label for="confirmar senha" class="form-label"><b>Confirmar Senha:</b></label>
+                    <input type="password" id="confirmar" name="confirmar" placeholder="Confirme sua senha" class="rounded-input"><br><br>
+
+                    <label for="usuario" class="form-label"><b>Nome de usuário:</b></label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Crie um nome de usuário" class="rounded-input"><br><br>
+
+                    <label for="telefone" class="form-label"><b>Telefone:</b></label>
+                    <input type="tel" id="telefone" name="telefone" class="rounded-input" placeholder="(xx)xxxxx-xxxx" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" inputmode="tel"><br><br>
+
+                    <input type="submit" value="Cadastrar" class="btn-limpar" href="fazerLogin.html">
+                    <a href="fazerLogin.html">Já possui cadastro?</a>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
