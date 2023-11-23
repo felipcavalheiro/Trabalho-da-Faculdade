@@ -1,0 +1,261 @@
+<!--Usei o antigo trabalho de HTML, uma loja de basquete, porém teve bastante alterações-->
+
+<!--Adicionei novas classes para deixar os textos do index centralizados-->
+
+<!--Adicionei novas classes para alterar o cabeçalho, deixando mais interativo e bonito-->
+
+<!--Adicionei comentários em todas as páginas, apenas para me localizar melhor, pois estava me perdendo muito nos códigos-->
+
+<!--Acrescentei o JAVA: nas imagens da tela index (quando a pessoa passa o mouse encima da imagem, aparece as informações do jogador; na troca de página, (quando clicados tem uma leve transição das páginas); no cadastro, (quando a a pessoa realiza o novo cadastro e deixe algum campo sem preencher, aparece uma mensagem no topo da página, com as informações que estão faltando)-->
+
+<!--Na tela grid.html, mudei o css para quando a pessoa passar o mouse por cima da imagem, ela da uma leve ampliada-->
+
+<!--Estilizei mais as páginas colocando mais vida e deixando mais bonito-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link para o arquivo de estilo externo "style.css" -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Adiciona o arquivo de script externo "script.js" com o atributo defer -->
+    <script defer src="script.js"></script>
+
+    <title>Menu Principal</title>
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegação -->
+        <nav class="navbar">
+            <!-- Container para agrupar elementos relacionados ao basquete -->
+            <div class="container-basquete">
+                <!-- Link para a página inicial -->
+                <h1><a href="index.html">BasqueteLIFE</a></h1>
+
+                <!-- Menu de navegação com links para diferentes seções -->
+                <div class="menu">
+                    <a href="index.html" onclick="changePage('home')">Início</a>
+                    <a href="cadastros.html" onclick="changePage('cadastros')">Cadastros</a>
+                    <a href="grid.html" onclick="changePage('produtos')">Produtos & Serviços</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção de destaque ou banner -->
+    <section class="hero">
+        <!-- Container para agrupar elementos -->
+        <div class="container">
+            <!-- Título da seção de destaque -->
+            <h2>Bem-vindo ao Basquete360</h2>
+
+            <!-- Linha horizontal para separação visual -->
+            <hr />
+
+            <p>Informações sobre o mundo do basquete acessível para todos.</p>
+
+            <p>Informações sobre o mundo do basquete acessível para todos.</p>
+        </div>
+    </section>
+
+    <!-- Seção de conteúdo principal -->
+    <section class="content">
+        <!-- Container para agrupar elementos do conteúdo principal -->
+        <div class="container">
+            <h2>Saiba mais sobre o Basquete</h2>
+            <p>
+                O basquete é um dos esportes mais populares do mundo. Só para se ter
+                uma ideia, a Federação Internacional de Basquetebol (Fiba) conta que
+                já são mais de 300 milhões de praticantes filiados, espalhados em mais
+                de 170 países.Se esse número de praticantes já surpreende, imagine
+                quantos fãs o esporte também não acumula ao redor do globo. Essa
+                popularização está relacionada à facilidade de jogar e também pela
+                paixão que o basquete desperta nas pessoas. E no Brasil, isso não
+                seria diferente. Apesar de vivermos no país do futebol, o basquete é
+                muito forte e conta com milhares de praticantes.
+            </p>
+
+            <h3>História do Basquete</h3>
+            <p>
+                O basquete foi inventado por Dr. James Naismith em 1891, na cidade de
+                Springfield, Massachusetts, EUA. A primeira partida de basquete foi
+                jogada com uma bola e cestas de pêssegos. Desde então, o esporte
+                cresceu e se tornou uma paixão global. O jogo teve origem em dezembro
+                de 1891 e foi uma criação do professor de educação física James
+                Naismith. O fim do ano é o período de inverno no hemisfério norte e
+                costuma ser bastante rigoroso. Nesse contexto, o inventor do basquete
+                trabalhava no Springfield College, em Massachusetts, nos Estados
+                Unidos. Pela dificuldade de praticar esporte ao ar livre, o professor
+                James Naismith (1861-1940) recebeu do diretor da instituição a tarefa
+                de criar uma atividade em que os alunos poderiam treinar em um local
+                fechado.
+            </p>
+
+            <h3>NBA</h3>
+            <p>
+                A NBA, ou National Basketball Association, é a principal liga de
+                basquete profissional do mundo, conhecida por sua competição acirrada
+                e nível de talento incomparável. Fundada em 1946, a NBA se tornou um
+                fenômeno global, com fãs ávidos em todos os cantos do planeta. A liga
+                é composta por 30 equipes, divididas em duas conferências, a
+                Conferência Leste e a Conferência Oeste, cada uma competindo por um
+                lugar nas finais da NBA.
+            </p>
+            <p>
+                A maior liga de basquete do mundo possui suas estrelas icônicas, desde
+                lendas do passado, como Michael Jordan e Larry Bird, até os astros
+                atuais, como LeBron James e Stephen Curry. Os jogos da NBA são um
+                espetáculo de habilidade, velocidade e precisão, com enterradas
+                espetaculares, arremessos de três pontos incríveis e defesa
+                implacável. Além disso, o All-Star Game da NBA é um evento anual que
+                reúne os melhores jogadores em uma exibição de puro talento e
+                entretenimento.
+            </p>
+            <p>
+                A liga não trata apenas sobre basquete; ela também desafia as questões
+                sociais e culturais. Muitos jogadores da NBA usam sua plataforma para
+                defender causas importantes, como justiça social e igualdade. Além
+                disso, a liga promove programas de responsabilidade social que
+                beneficiam comunidades em todo o mundo. A NBA é uma mistura única de
+                esporte, entretenimento e impacto social, e sua influência continua a
+                crescer, tornando-a uma das ligas mais emocionantes e respeitadas do
+                mundo.
+            </p>
+
+            <!--Classe que estiliza as imagens, dando zoom quando passa o mouse encima da imagem, além de manter uma ordem de 2 imagens uma ao lado da outra-->
+
+            <!-- Imagens e informações dos jogadores -->
+            <div class="players-container">
+                <!-- Container para os jogadores -->
+
+                <!-- Jogador Michael Jordan -->
+
+                <!-- Container para informações do jogador Michael Jordan -->
+                <div class="player" id="michael-jordan">
+                    <!-- Container para a imagem do jogador Michael Jordan -->
+                    <div class="player-img">
+                        <!-- Imagem do jogador com descrição alternativa -->
+                        <img src="./img/michael_jordan.jpg" alt="Michael Jordan" width="400" />
+                    </div>
+
+                    <!-- Container para informações específicas do jogador Michael Jordan -->
+                    <div class="player-info" id="michael-jordan-info">
+                        <p>Michael Jordan</p>
+                        <ul>
+                            <li>Títulos da NBA: 6</li>
+                            <li>MVPs da Temporada Regular: 5</li>
+                            <li>Prêmios de Melhor Defensor (DPOY): 1</li>
+                            <li>Finals MVPs: 6</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Jogador LeBron James -->
+                <div class="player" id="lebron-james">
+                    <!-- Container para informações do jogador LeBron James -->
+                    <div class="player-img">
+                        <!-- Container para a imagem do jogador LeBron James -->
+                        <img src="./img/lebron_james.jpg" alt="LeBron James" width="400" />
+                        <!-- Imagem do jogador com descrição alternativa -->
+                    </div>
+                    <!-- Container para informações específicas do jogador LeBron James -->
+                    <div class="player-info" id="lebron-james-info">
+                        <!-- Nome do jogador -->
+                        <p>LeBron James</p>
+                        <!-- Lista não ordenada para as informações do jogador -->
+                        <ul>
+                            <li>Títulos da NBA: 4</li>
+                            <li>MVPs da Temporada Regular: 4</li>
+                            <li>Prêmios de Melhor Defensor (DPOY): 0</li>
+                            <li>Finals MVPs: 4</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Jogador Kareem Abdul-Jabbar -->
+                <div class="player" id="kareem-abdul-jabbar">
+                    <!-- Container para informações do jogador Kareem Abdul-Jabbar -->
+                    <div class="player-img">
+                        <!-- Container para a imagem do jogador Kareem Abdul-Jabbar -->
+                        <img src="./img/kareem.jpg" alt="Kareem Abdul-Jabbar" width="400" />
+                        <!-- Imagem do jogador com descrição alternativa -->
+                    </div>
+                    <!-- Container para informações específicas do jogador Kareem Abdul-Jabbar -->
+                    <div class="player-info" id="kareem-abdul-jabbar-info">
+                        <!-- Nome do jogador -->
+                        <p>Kareem Abdul-Jabbar</p>
+                        <!-- Lista não ordenada para as informações do jogador -->
+                        <ul>
+                            <li>Títulos da NBA: 6</li>
+                            <li>MVPs da Temporada Regular: 6</li>
+                            <li>Prêmios de Melhor Defensor (DPOY): 0</li>
+                            <li>Finals MVPs: 2</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Jogador Magic Johnson -->
+                <div class="player" id="magic-johnson">
+                    <!-- Container para informações do jogador Magic Johnson -->
+                    <div class="player-img">
+                        <!-- Container para a imagem do jogador Magic Johnson -->
+                        <img src="./img/magic.jpg" alt="Magic Johnson" width="400" />
+                        <!-- Imagem do jogador com descrição alternativa -->
+                    </div>
+                    <!-- Container para informações específicas do jogador Magic Johnson -->
+                    <div class="player-info" id="magic-johnson-info">
+                        <!-- Nome do jogador -->
+                        <p>Magic Johnson</p>
+                        <!-- Lista não ordenada para as informações do jogador -->
+                        <ul>
+                            <li>Títulos da NBA: 5</li>
+                            <li>MVPs da Temporada Regular: 3</li>
+                            <li>Prêmios de Melhor Defensor (DPOY): 0</li>
+                            <li>Finals MVPs: 3</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Jogador Larry Bird -->
+                <div class="player" id="larry-bird">
+                    <!-- Container para informações do jogador Larry Bird -->
+                    <div class="player-img">
+                        <!-- Container para a imagem do jogador Larry Bird -->
+                        <img src="./img/larry.jpg" alt="Larry Bird" width="400" />
+                        <!-- Imagem do jogador com descrição alternativa -->
+                    </div>
+                    <!-- Container para informações específicas do jogador Larry Bird -->
+                    <div class="player-info" id="larry-bird-info">
+                        <!-- Nome do jogador -->
+                        <p>Larry Bird</p>
+                        <!-- Lista não ordenada para as informações do jogador -->
+                        <ul>
+                            <li>Títulos da NBA: 3</li>
+                            <li>MVPs da Temporada Regular: 3</li>
+                            <li>Prêmios de Melhor Defensor (DPOY): 0</li>
+                            <li>Finals MVPs: 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Rodapé da página -->
+        <div>
+            <!-- Container no rodapé -->
+            <p class="footer-txt">&copy; 2023 Basquete360. Todos os direitos reservados.</p>
+            <!-- Texto de direitos autorais -->
+        </div>
+    </footer>
+
+    <!-- Script para mostrar informações do jogador ao clicar na imagem -->
+    <script src="script.js"></script>
+    <!-- Fim do corpo da página -->
+</body>
+</html>

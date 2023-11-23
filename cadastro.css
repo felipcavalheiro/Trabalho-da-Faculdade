@@ -1,59 +1,122 @@
 body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #333;
+}
+
+header {
+    background-image: linear-gradient(#e6ac00, rgb(204, 133, 0));
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 a {
+    margin: 0;
+    font-size: 36px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: url('images.png');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    background-color: gainsboro;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.container-form {
+    width: 60%; /* Ajustei a largura para garantir mais espaço para o formulário */
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 #container {
-    
-    background-color: rgb(255, 255, 255);  
-    width: 95%;
-    padding: 50px;
-    box-shadow: 0px 0px 10px rgba(24, 0, 80, 0.2);
-    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
-.none {
-    display: none;
-}
-
-input.rounded-input {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 5px;
-    float: right;
-    width: 58%; 
-}
-
-input.btn-limpar {
-    background-color: rgb(242, 130, 32);
-    color: rgb(0, 0, 0);
-    border: none;
-    float: right;
-    padding: 10px 10px;
-    border-radius: 12px;
-    margin-top: 1px;
-    margin-right: 3px;
-}
 .form-label {
-    margin-left: 20px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #333;
 }
 
 .rounded-input {
-    padding: 15px;
-    border: 60px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    width: calc(100% - 26px); /* Ajustei a largura da caixa de texto */
 }
-header h1 a {
-    margin: 0;
-    font-size: 65px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-cadastrar {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-fazerlogin {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-fazerlogin:hover {
+    background-color: #e64d00;
+}
+
+.btn-cadastrar:hover {
+    background-color: #e64d00;
+}
+
+a {
     text-decoration: none;
+    color: #333;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

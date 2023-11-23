@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+header {
+    background-image: linear-gradient(#e6ac00, rgb(204, 133, 0));
+    color: #fff;
+    padding: 15px 0;
+    text-align: center; /* Centralizando o texto no cabeçalho */
+}
+
+header h1 a {
+    margin: 0;
+    font-size: 36px; /* Reduzindo o tamanho da fonte para um visual mais equilibrado */
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+h2,
+h3,
+ul,
+li,
+p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background: url('hero-bg.jpg') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.container-basquete {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adicionando estilo aos jogadores */
+.players-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.player {
+    margin: 20px;
+    text-align: center;
+}
+
+.player-img {
+    cursor: pointer;
+    width: 100%; /* Define a largura da imagem como 100% para ocupar todo o espaço do contêiner */
+    height: auto; /* Permite que a altura seja ajustada automaticamente, mantendo a proporção original */
+    max-width: 500px; /* Define uma largura máxima para evitar que as imagens fiquem muito grandes */
+    margin: 0 auto; /* Centraliza a imagem no contêiner pai */
+}
+
+.player-info {
+    display: none;
+    text-align: left;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.player-info.active {
+    display: block;
+}
+
+/* Adicionando estilo ao menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}

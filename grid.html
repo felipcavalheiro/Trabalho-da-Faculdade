@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="grid.css">
-    <title>Produtos & Serviços</title>
+    <script defer src="script.js"></script>
+    <title>Menu Principal</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="container-basquete">
-                <h1><a href="menupr.html">Basquete360</a></h1>
-                <ul>
-                    <li><a href="menupr.html">Início</a></li>
-                    <li><a href="cadastros.html">Cadastros</a></li>
-                    <li><a href="relatorios.html">Relatórios</a></li>
-                    <li><a href="grid.html">Produtos & Serviços</a></li>
-                </ul>
+                <h1><a href="index.html">BasqueteLIFE</a></h1>
+                <div class="menu">
+                    <a href="index.html" onclick="changePage('home')">Início</a>
+                    <a href="cadastros.html" onclick="changePage('cadastros')">Cadastros</a>
+                    <a href="grid.html" onclick="changePage('produtos')">Produtos & Serviços</a>
+                </div>
             </div>
         </nav>
     </header>
-
     <section class="hero">
         <div class="container">
             <h2>Produtos & Serviços</h2>
@@ -33,89 +32,70 @@
     <section class="content">
         <div class="container">
             <div class="product-grid">
-                <!-- Adicione o código pop-up para cada produto -->
-                <div class="product-card" onclick="openModal('product1.jpg')">
-                    <img src="product1.jpg" alt="Revista SLAM - Allen Iverson" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product1.jpg" alt="Revista SLAM - Allen Iverson" class="product-image">
                     <h3 class="product-title">Revista SLAM - Allen Iverson - Clássica '99</h3>
                     <p class="product-price">R$119.99</p>
                 </div>
-                <div class="product-card" onclick="openModal('product2.jpg')">
-                    <img src="product2.jpg" alt="Regata Michael Jordan" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product2.jpg" alt="Regata Michael Jordan" class="product-image">
                     <h3 class="product-title">Regata Michael Jordan - Clássica - City Edition</h3>
                     <p class="product-price">R$244.99</p>
                 </div>
-
-                <div class="product-card" onclick="openModal('product3.jpg')">
-                    <img src="product3.jpg" alt="Poster Lebron James Dunk" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product3.jpg" alt="Poster Lebron James Dunk" class="product-image">
                     <h3 class="product-title">Poster Lebron James Dunk- 60cm x 100cm</h3>
                     <p class="product-price">R$34.99</p>
                 </div>
-                <div class="product-card" onclick="openModal('product4.jpg')">
-                    <img src="product4.jpg" alt="Quadro Michael Jordan" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product4.jpg" alt="Quadro Michael Jordan" class="product-image">
                     <h3 class="product-title">Quadro Michael Jordan Enterrando - 50cm x 25cm</h3>
                     <p class="product-price">R$49.99</p>
                 </div>
-                <div class="product-card" onclick="openModal('product5.jpg')">
-                    <img src="product5.jpg" alt="Regata Grizzlies" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product5.jpg" alt="Regata Grizzlies" class="product-image">
                     <h3 class="product-title">Regata Grizzlies City Edition - Ja Morant #12</h3>
                     <p class="product-price">R$234.99</p>
                 </div>
-                <div class="product-card" onclick="openModal('product6.jpg')">
-                    <img src="product6.jpg" alt="Bola Basquete Wilson" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product6.jpg" alt="Bola Basquete Wilson" class="product-image">
                     <h3 class="product-title">Bola de Basquete Wilson Authentic - NBA</h3>
                     <p class="product-price">R$169.99</p>
                 </div>
-                <div class="product-card" onclick="openModal('product7.jpg')">
-                    <img src="product7.jpg" alt="Shorts Lakers" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product7.jpg" alt="Shorts Lakers" class="product-image">
                     <h3 class="product-title">Shorts Lakers - Purple & Gold - Clássico</h3>
                     <p class="product-price">R$199.99</p>
                 </div>
-                <div class="product-card" onclick="openModal('product8.jpg')">
-                    <img src="product8.jpg" alt="Regata Black Mamba" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product8.jpg" alt="Regata Black Mamba" class="product-image">
                     <h3 class="product-title">Regata Lakers Black Mamba '19-20 - Kobe Bryant #8 & 24</h3>
                     <p class="product-price">R$299.99</p>
                 </div>
-                <div class="product-card" onclick="openModal('product9.jpg')">
-                    <img src="product9.jpg" alt="Revista SLAM - Shaq" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product9.jpg" alt="Revista SLAM - Shaq" class="product-image">
                     <h3 class="product-title">Revista SLAM - Shaquille O'Neal - Clássica '94</h3>
                     <p class="product-price">R$119.99</p>
                 </div>
-                <div class="product-card" onclick="openModal('product10.jpg')">
-                    <img src="product10.jpg" alt="Regata Lakers Lebron" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product10.jpg" alt="Regata Lakers Lebron" class="product-image">
                     <h3 class="product-title">Regata Lakers Classic Edition '22-23 - Lebron James #6</h3>
                     <p class="product-price">R$299.99</p>
                 </div>
-                <div class="product-card" onclick="openModal('product11.jpg')">
-                    <img src="product11.jpg" alt="Poster Kobe" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product11.jpg" alt="Poster Kobe" class="product-image">
                     <h3 class="product-title">Poster Kobe Bryant - 48cm x 72 cm</h3>
                     <p class="product-price">R$119.99</p>
                 </div>
-                <div class="product-card" onclick="openModal('product12.jpg')">
-                    <img src="product12.jpg" alt="Revista SLAM Kobe" class="product-image">
+                <div class="product-card">
+                    <img src="./img/product12.jpg" alt="Revista SLAM Kobe" class="product-image">
                     <h3 class="product-title">Revista SLAM - Kobe Bryant - Clássica '99-00</h3>
                     <p class="product-price">R$119.99</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
-    <script>
-        function openModal(imageSrc) {
-            var modal = document.getElementById('myModal');
-            var modalImage = document.getElementById('modalImage');
-            modal.style.display = 'block';
-            modalImage.src = imageSrc;
-        }
-
-        function closeModal() {
-            var modal = document.getElementById('myModal');
-            modal.style.display = 'none';
-        }
-    </script>
+<br><br>
     <footer class="footer">
         <div>
             <p  class="footer-txt">&copy; 2023 Basquete360. Todos os direitos reservados.</p>
